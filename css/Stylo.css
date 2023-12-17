@@ -1,0 +1,124 @@
+/*///////////////////ESTILOS RESET///////////////
+///////////////////////////////////////////////////
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li a {
+    display: inline-block;
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+    color: black
+}
+
+#body {
+    max-width: 1440px;
+    margin: 0;
+}
+
+#main {
+    min-height: 100vh;
+}
+
+/*
+/////////////////ESTILOS DEL HEADER/////////////////
+////////////////////////////////////////////////////
+*/
+
+#header{
+    width: 100%;
+    height: 25vh;
+}
+
+
+/*
+/////////////////ESTILOS DEL BODY-NAVBAR/////////////////
+////////////////////////////////////////////////////
+*/
+#nav{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    background-image: url(../imagenes/Header.png.jpg);
+}
+
+#nav ul li {
+display: inline-block;
+}
+
+
+#nav img , #nav ul{
+        display: inline-block;
+}
+
+#nav ul li {
+    margin-left: 55px;
+    font-size: 30px;
+    color: black;
+}
+
+
+
+/*//////////////////////ESTILO DEL MAIN///////////////
+//////////////////////////////////////////////////////
+*/
+#portadaPrincipal{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/degradacion-Tierra-854x465.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+h5{
+    font-size: 19px;
+}
+
+#main{
+    min-width: 100vh;
+}
+
+
+
+/*
+//////////////////ESTILOS DEL FOOTER////////////////
+////////////////////////////////////////////////////
+*/
+#footer{
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: grey
+}
+.footerEnlaces ul li {
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+.footerEnlaces a{
+    color: black;
+    margin-top: 10px;
+}
+
+.footerRedes a {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 10px;
+    color: green;
+    width: 20px;
+    padding: 10px;
+}
