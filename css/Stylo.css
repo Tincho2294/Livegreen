@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 li a {
@@ -17,56 +19,66 @@ li a {
 
 #body {
     max-width: 1440px;
-    margin: 0;
-}
-
-#main {
-    min-height: 100vh;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*
 /////////////////ESTILOS DEL HEADER/////////////////
 ////////////////////////////////////////////////////
 */
-
-#header{
-    width: 100%;
-    height: 25vh;
-}
-
-
 /*
-/////////////////ESTILOS DEL BODY-NAVBAR/////////////////
+/////////////////ESTILOS DEL NAV////////////////////
 ////////////////////////////////////////////////////
 */
-#nav{
-    width: 100%;
-    height: 100%;
-    background-color: aliceblue;
-    background-image: url(../imagenes/Header.png.jpg);
+.navBannerPrincipal{
+
+    max-width: 1440px;
+    margin: 0 auto;
+
 }
 
-#nav ul li {
-display: inline-block;
+.menuContenedor{
+    background-color: #000000;
+    min-height: 80px;
 }
 
+.navBar{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
 
-#nav img , #nav ul{
-        display: inline-block;
 }
 
-#nav ul li {
-    margin-left: 55px;
-    font-size: 30px;
-    color: black;
+.divNavBar ul li{
+position: relative;
+float: left;
 }
 
+.divNavBar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
 
+.navBannerPrincipal .imgLogo{
+    width: 70px;
+}
+
+.divNavBar ul li a:hover{
+    color: red;
+}
 
 /*//////////////////////ESTILO DEL MAIN///////////////
 //////////////////////////////////////////////////////
 */
-#portadaPrincipal{
+.portadaPrincipal{
     width: 100%;
     height: 100vh;
     background-image: url(../imagenes/degradacion-Tierra-854x465.jpg);
@@ -74,21 +86,69 @@ display: inline-block;
     background-size: cover;
     background-position: center;
 }
-h1{
+.h1PortadaPrincipal{
     display: flex;
     font-size: 40px;
     justify-content: center;
     align-items: center;
+    
 }
-h5{
+.h5PortadaPrincipal{
+    margin-top: 35px;
     font-size: 19px;
 }
 
-#main{
-    min-width: 100vh;
+#boxPrueba{
+    border: 1px solid black;
+    background: #6ffc77;
+    padding: 20px;
+    }
+
+.cajaPrueba1{
+    display: flex;
+    margin-top: 10px;
+}
+.cajaPrueba2{
+    display: flex;
+margin-top: 30px;
+}
+.cajaPrueba3{
+    display: flex;
+    margin-top: 30px;
 }
 
+.imgBox1{
+width: 180px;
+height: 30vh;
+}
+.imgBox2{
+width: 180px;
+height: 30vh;
+}
+.imgBox3{
+width: 180px;
+height: 30vh;
 
+}
+
+.divCajaPrueba1{
+    padding-left: 20px;
+}
+.divCajaPrueba2{
+padding-right: 20px;
+}
+.divCajaPrueba3{
+    padding-left: 20px;
+}
+
+.h3BoxPrueba{
+    margin-top: 5px;
+    font-size: 35px;
+}
+.pBoxPrueba{
+    margin-top: 20px;
+    font-size: 20px;
+}
 
 /*
 //////////////////ESTILOS DEL FOOTER////////////////
@@ -115,9 +175,7 @@ h5{
 }
 
 .footerRedes a {
-    display: inline-block;
-    font-size: 40px;
-    margin-left: 10px;
+    display: flexbox;
     color: green;
     width: 20px;
     padding: 10px;
