@@ -187,6 +187,12 @@ padding-right: 20px;
 */
 #pruebaGrid{
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, 200px) ;
+    gap: 40 px;
+}
+
+.boxGrid img{
+    width: 100%;
+
 }
