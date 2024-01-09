@@ -1,0 +1,221 @@
+/*///////////////////ESTILOS RESET///////////////
+///////////////////////////////////////////////////
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li a {
+  display: inline-block;
+  list-style: none;
+  font-style: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#body {
+  max-width: 1440px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*
+/////////////////ESTILOS DEL HEADER/////////////////
+////////////////////////////////////////////////////
+*/
+/*
+/////////////////ESTILOS DEL NAV////////////////////
+////////////////////////////////////////////////////
+*/
+#nav {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+#nav img, #nav ul {
+  display: inline-flex;
+}
+
+#nav ul li a {
+  margin-left: 20px;
+  font-size: 28px;
+  color: white;
+}
+
+/*//////////////////////ESTILO DEL MAIN///////////////
+//////////////////////////////////////////////////////
+*/
+#main {
+  background-color: #6abafc;
+}
+
+.imgPortadaInicio {
+  width: 100%;
+  height: 100vh;
+}
+
+.h1PortadaPrincipal {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.h5PortadaPrincipal {
+  margin-top: 35px;
+  font-size: 19px;
+}
+
+#boxPrueba {
+  border: 1px solid black;
+  background: #6ffc77;
+  padding: 20px;
+}
+
+.cajaPrueba1 {
+  display: flex;
+  margin-top: 10px;
+}
+
+.cajaPrueba2 {
+  display: flex;
+  margin-top: 30px;
+}
+
+.cajaPrueba3 {
+  display: flex;
+  margin-top: 30px;
+}
+
+.imgBox1 {
+  width: 180px;
+  height: 30vh;
+}
+
+.imgBox2 {
+  width: 180px;
+  height: 30vh;
+}
+
+.imgBox3 {
+  width: 180px;
+  height: 30vh;
+}
+
+.divCajaPrueba1 {
+  padding-left: 20px;
+}
+
+.divCajaPrueba2 {
+  padding-right: 20px;
+}
+
+.divCajaPrueba3 {
+  padding-left: 20px;
+}
+
+.h3BoxPrueba {
+  margin-top: 5px;
+  font-size: 35px;
+}
+
+.pBoxPrueba {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/*
+//////////////////ESTILOS DEL FOOTER////////////////
+////////////////////////////////////////////////////
+*/
+#footer {
+  margin-top: auto;
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  text-align: center;
+}
+
+.footerEnlaces {
+  display: inline block;
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.footerRedes {
+  display: inline;
+  width: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*
+/////////////ESTILOS DE GRILLAS/////////////////
+////////////////////////////////////////////////
+*/
+#pruebaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+  grid-template-areas: "pruebaGrid1 pruebaGrid2 pruebaGrid3" "pruebaGrid4 pruebaGrid5 pruebaGrid6";
+}
+
+.boxGrid img {
+  width: 100%;
+  height: 100%;
+}
+
+.pruebaGrid1 {
+  grid-area: pruebaGrid1;
+}
+
+.pruebaGrid2 {
+  grid-area: pruebaGrid2;
+}
+
+.pruebaGrid3 {
+  grid-area: pruebaGrid3;
+}
+
+.pruebaGrid4 {
+  grid-area: pruebaGrid4;
+}
+
+.pruebaGrid5 {
+  grid-area: pruebaGrid5;
+}
+
+.pruebaGrid6 {
+  grid-area: pruebaGrid6;
+}
+
+@media (max-width: 600px) {
+  #pruebaGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas: "pruebaGrid1" "pruebaGrid2" "pruebaGrid3" "pruebaGrid4" "pruebaGrid5" "pruebaGrid6";
+    justify-content: center;
+  }
+  #footer {
+    flex-direction: column;
+  }
+  #header {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
